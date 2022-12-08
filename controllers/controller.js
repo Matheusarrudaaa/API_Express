@@ -1,3 +1,4 @@
+const fs = require('fs').promises;
 exports.pong = (req, res) => {
 
     res.send(`
@@ -11,5 +12,8 @@ exports.pong = (req, res) => {
 
 exports.pong_msg = (req, res) => {
     console.log(req.body)
+
+    const json = JSON.stringify(req.body);
+    fs.writeFile("./teste.json", json, { flag: 'w' });
     res.send(`<h1>Mensagem recebida e salva!!! </h1>`)
 }
