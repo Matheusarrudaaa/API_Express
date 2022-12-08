@@ -5,10 +5,10 @@ a mensagem, o usuário será direcionado à outra guia e a sua mensagem sera sal
 
 ## Funcionamento
 
-npm init -y #iniciando o npm
+npm init -y 
 
-npm install express --save-dev 
+npm install express 
 
-npm instal nodemon --save-dev 
+npm instal nodemon 
 
 
